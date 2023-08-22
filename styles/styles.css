@@ -108,15 +108,14 @@
 .box7{
     grid-area: box7;
     
-    
 }
 .box8 {
     grid-area: box8;
-    p
+    
 }
 .box9 {
     grid-area: box9;
-    ;
+    
 }
 .box10 {
     grid-area: box10;
@@ -200,6 +199,10 @@ justify-content:center;
 @media screen and (max-width: 900px) {
     
     /*Header*/
+    .logo{
+    height: 50%;
+    width: 50%;
+    }
     .abrir_menu,
     .cerrar_menu {
         display: block;
@@ -243,6 +246,8 @@ justify-content:center;
     /*Footer*/
     .contenedor_footer{
         display: grid;
+        position: absolute;
+        bottom:0px;
         grid-template-columns: 2fr 1fr 2fr ;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
@@ -252,6 +257,8 @@ justify-content:center;
 
     .footer{
         font-size: small;
+        position: absolute;
+        bottom:0px;
         }
 
     .img_footer{
