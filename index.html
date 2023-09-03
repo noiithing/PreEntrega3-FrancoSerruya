@@ -8,34 +8,61 @@
     <meta name="keywords" content="bordados, personalizados, argentina, envios, buzos , remeras, promociones ">
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 </head>
 
-
-    <header class="header">
-        <a href="./index.html">
-        <div class="logo">
-            <img class="logo" src="./imagenes/logoTamilu.png" alt="logoTamilu">
-        </div>
-        </a>
+<body>
     
-        <button class="abrir_menu" id="abrir"><i class="bi bi-list"></i></button>
-        <nav class="nav " id="nav">
-            <ul class="nav_list" >
-            <button class="cerrar_menu" id="cerrar"><i class="bi bi-x-lg"></i></i></button>
-            <li><a class="menu_item active" href="index.html"> Inicio </a></li>
-            <li><a class="menu_item" href="./paginas/tienda.html">Tienda </a></li>
-            <li><a class="menu_item" href="./paginas/comoComprar.html">Como comprar </a></li>
-            <li><a class="menu_item"href="./paginas/talles.html">Guia de Talles </a></li>
-            <li><a class="menu_item"href="./paginas/contactanos.html">Contactanos</a></li>
-        </ul>
-        </nav>
+    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex">
+        <div class="container-fluid">
+    <a class="navbar-brand " href="../index.html"><img class="logo" src="../imagenes/logoTamilu.png" alt="logo tamilu" width="100" height="100"></a> 
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./paginas/tienda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tienda
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./paginas/tienda.html">Nuestra tienda</a></li>
+                <li><a class="dropdown-item" href="./paginas/tienda.html">Ofertas</a></li>
+                <li><a class="dropdown-item" href="./paginas/tienda.html">Buzos bordados</a></li>
+                <li><a class="dropdown-item" href="./paginas/tienda.html">Remeras Bordadas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./paginas/tienda.html">Personalizados</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../paginas/comoComprar.html">Como comprar</a>
+            </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="./paginas/talles.html">Guia Talles</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="../paginas/contactanos.html">Contactanos</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscador.." aria-label="Search">
+            <button class="btn btn-outline-info btn-sm" type="submit">Buscar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
     </header>
-    <script src="./js/main.js"></script>
+
+
 
 <main>
-    
-
 <div class="destacado">
     <h1>Lo mas destacado</h1>
     
@@ -71,7 +98,7 @@
         <h4>$1.000</h4>
         <a href="#" class="boton_agregar">Agregar</a>
     </div>
-    </body>
+    
 
     <div class="box box5">
         <img src="../Ropa/remera beage.jpg" alt="" class="img_card">
@@ -106,7 +133,7 @@
 
 
     <div class="box box9">
-        <img src="../Ropa/remera verde.jpg" alt=""class="img_card">
+        <img src="../Ropa/remera verde.jpg" alt="remera verde"class="img_card">
         <h3>Remera Bordada </h3>
         <h4>$1.000</h4>
         <a href="#" class="boton_agregar">Agregar</a>
@@ -115,16 +142,16 @@
 
 
     <div class="box box10">
-        <img src="../Ropa/remera verde.jpg" alt=""class="img_card">
+        <img src="../Ropa/remera verde.jpg" alt="remera verde"class="img_card">
         <h3>Remera Bordada </h3>
         <h4>$1.000</h4>
         <a href="#" class="boton_agregar">Agregar</a>
     </div>
 
 </div>
-</main>
+    </main>
 
-
+<script src="./js/main.js"></script>
 <footer clas="footer">
     <div class="contenedor_footer">
         <div class="caja1">
@@ -139,7 +166,7 @@
         <div class="caja2">
         <ul >
             <li>Medios de Envio</li>
-            <li> <img src="./imagenes/andreani.svg" alt="" class="img_footer"> </li>
+            <li> <img src="./imagenes/andreani.svg" alt="logo andreani" class="img_footer"> </li>
         </ul>
         </div>
 
@@ -169,5 +196,5 @@
     </div>
 
 </footer>
-
+</body>
 </html>

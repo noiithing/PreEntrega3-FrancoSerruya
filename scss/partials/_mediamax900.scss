@@ -1,16 +1,16 @@
 @media screen and (max-width: 900px) {
-    .logo{
-        height: 50%;
-        width: 50%;
+    .header{
+
+        .logo{
+        height: 10%;
+        width: 10%;
         }
 
-        .abrir_menu,
-        .cerrar_menu {
-            display: block;
+        .abrir_menu{
+            display:block;
             border: 0;
             font-size: 2rem;
             background-color: transparent;
-            cursor: pointer;
             color: black;
         }
 
@@ -32,8 +32,7 @@
                 &::hover{
                     color: #5e5145;
                     text-decoration: underline;
-                    
-                    }
+                        }
             }
             
             &::visited{
@@ -43,8 +42,18 @@
             .nav_list{
                 flex-direction: column;
                 align-items: end;
-        }
 
+
+                .cerrar_menu {
+                    display:block;
+                    border: 0;
+                    font-size: 2rem;
+                    background-color: transparent;
+                    color: black;
+                }
+        }
+    } 
+}
 
     /*Body*/
     .contenedor_catalogo{
@@ -58,7 +67,8 @@
         "box1 box2 box3"
         "box4 box5 box6 box7 box8 box 9 box10";
         } 
-
+    
+    
 
     /*Footer*/
     
@@ -92,11 +102,5 @@
                     }
                     }
                 }
-                
-        
-        }
-        
-    
-}
-    
+        } 
 }
