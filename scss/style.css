@@ -6,9 +6,7 @@
   font-family: "Poppins", sans-serif;
   list-style: none;
 }
-body{
-background-image: url(../imagenes/fondo-degrade-formulario.jpg);
-}
+/*De aca a abajo es contactanos , hay que agregarlo a sass*/
 .titulo-contacto{
   margin-bottom: 30px;
 }
@@ -19,7 +17,6 @@ background-image: url(../imagenes/fondo-degrade-formulario.jpg);
   padding: 1.5em;
   background-color 
 }
-
 
 .titulo-contacto{
   text-align: center;
@@ -40,7 +37,6 @@ background-image: url(../imagenes/fondo-degrade-formulario.jpg);
 .contacto-form form .block{
 grid-column: 1/3;
 }
-
 
 .contacto-form form button , .contacto-form form input , .contacto-form form textarea{
   width: 100%;
@@ -90,8 +86,74 @@ grid-column: 1/3;
   .contacto-info ul li{
     padding: .3em;
   }
+  /*De aca a abajo es como comprar , hay que agregarlo a sass*/
+  .encabezado-como-comprar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .titulo-como-comprar{
+    padding-top: 20px ;
+    font-size: 30px ;
+    font-weight: 800;
+    
+  }
+  .subtitulo-como-comprar{
+    font-size: 15px;
+    padding-bottom: 30px;
+    font-weight: 300;
+  }
+  .contenedor-como-comprar{
+  background-color: #f0f0f0;;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+}
 
+.contenedor-como-comprar{
 
+  justify-content:space-around;
+  row-gap: 30rem;
+}
+.box1-como-comprar, .box2-como-comprar , .box3-como-comprar{
+
+  text-align: center;
+  
+  height: 250px;
+  width: 350px;
+  padding: 15px;
+  
+}
+.h2-como-comprar{
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.h3-como-comprar{
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  
+
+}
+.iconos-como-compar{
+  padding-top: 10px;
+  width: 100px
+}
+
+/*acordeon*/
+.contenedor-acordeon{
+  text-align: center;
+}
+.titulo-acordeon{
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: medium;
+}
+.accordion{
+  padding: 100px;
+  padding-top: 20px;
+}
   /*De aca para abajo tiene sass*/
 
 .formulario{
@@ -278,7 +340,7 @@ grid-column: 1/3;
   justify-content: center;
 }
 .contenedor_footer .caja1, .contenedor_footer .caja2, .contenedor_footer .caja3, .contenedor_footer .caja4 {
-  background-color: #DFD4C8;
+  background-color: #f0f0f0;
   text-align: center;
   justify-content: center;
 }
@@ -315,7 +377,7 @@ grid-column: 1/3;
   .titulo-contacto{
     margin-bottom: 50px;
   }
-  .contenedor-formulario{
+.contenedor-formulario{
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -355,11 +417,10 @@ grid-column: 1/3;
   }
   .footer .contenedor_footer {
     display: grid;
-    position: absolute;
-    bottom: 0px;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "caja1 caja2 caja4" "caja1 caja3 caja4";
+    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction:column;
+    flex-flow:row wrap;
   }
   .footer .contenedor_footer .img_footer {
     width: 60%;
@@ -368,4 +429,27 @@ grid-column: 1/3;
   .footer .caja1 ul li, .footer .caja2 ul li, .footer .caja3 ul li, .footer .caja4 ul li {
     font-size: x-small;
   }
+
+/*nuevo sin css - como comprar  */
+  .contenedor-como-comprar{
+    background-color: #f0f0f0;;
+    display:grid;
+    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .box1-como-comprar, .box2-como-comprar , .box3-como-comprar{
+    height:300px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .contenedor-como-comprar{
+
+    flex-flow: row wrap;
+    row-gap: 5rem;
+  }
+
 }/*# sourceMappingURL=style.css.map */
