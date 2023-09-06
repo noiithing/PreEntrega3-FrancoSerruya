@@ -64,6 +64,71 @@
         </nav>
         
     
+
+
+
+
+
+        <style>
+            /* Estilos generales de la tabla */
+            .table-container {
+                overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si es necesario */
+            }
+    
+            .table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+    
+            .table th, .table td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+    
+            /* Media query para dispositivos más pequeños */
+            @media (max-width: 768px) {
+                .table {
+                    display: block; /* Cambia a una estructura de bloque en dispositivos pequeños */
+                }
+    
+                .table th, .table td {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tabla Responsiva</h1>
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Encabezado 1</th>
+                        <th>Encabezado 2</th>
+                        <th>Encabezado 3</th>
+                        <th>Encabezado 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                        <td>Dato 7</td>
+                        <td>Dato 8</td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+    </body>
     </body>
 
 

@@ -159,6 +159,54 @@ grid-column: 1/3;
   padding: 100px;
   padding-top: 20px;
 }
+
+
+/*De aca a abajo es talles , hay que agregarlo a sass*/
+.contenedor-talles {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 30px;
+        padding: 20px;
+        padding-bottom: 50px;
+        }
+
+      
+.talles-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 2px 2px 6px 6px rgba(9, 22, 199, 0.288);
+        font-size: 15px;
+        border-radius: 3%;
+        }
+.talles-card-mujer{
+  border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 2px 2px 6px 6px rgba(182, 22, 147, 0.253);
+        font-size: 15px;
+        border-radius: 3%;
+}
+
+.titulo-tarjeta{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.titulo-talles{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+}
+.imagen-talles {
+  width: 70%;
+  height: 60%;
+}
+.imagen-tabla-talles{
+  width: 50%;
+  height: 30%;
+  padding:8px;
+}
+
   /*De aca para abajo tiene sass*/
 
 .formulario{
@@ -395,6 +443,10 @@ grid-column: 1/3;
     padding: 5px;
     margin: 5px;
   }
+/* talles Agregar a sass*/
+  .contenedor-talles {
+                grid-template-columns: repeat(4, 1fr);
+              }  
 }
 
 /*Nuevo sin SASS*/
@@ -459,4 +511,23 @@ grid-column: 1/3;
     row-gap: 5rem;
   }
 
+/*# media queris talles , sin sass*/
+  .contenedor-talles {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .titulo-tarjeta{
+              font-size:10px;
+              padding-bottom: 4px;
+            }
+
+            .imagen-talles {
+              width: 70%;
+              height: 50%;
+            }
+            .imagen-tabla-talles{
+              width: 75%;
+              height: 35%;
+              padding:3px;
+            }
 }/*# sourceMappingURL=style.css.map */
