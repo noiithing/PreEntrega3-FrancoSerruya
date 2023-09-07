@@ -175,17 +175,20 @@ grid-column: 1/3;
         border: 1px solid #ccc;
         padding: 10px;
         text-align: center;
-        box-shadow: 2px 2px 6px 6px rgba(9, 22, 199, 0.288);
+        box-shadow: 2px 2px 6px 6px rgba(9, 22, 199, 0.185);
         font-size: 15px;
         border-radius: 3%;
+        background-color: rgba(238, 233, 233, 0.377);
+        
         }
 .talles-card-mujer{
   border: 1px solid #ccc;
         padding: 10px;
         text-align: center;
-        box-shadow: 2px 2px 6px 6px rgba(182, 22, 147, 0.253);
+        box-shadow: 2px 2px 6px 6px rgba(182, 22, 147, 0.418);
         font-size: 15px;
         border-radius: 3%;
+        background-color: rgba(238, 233, 233, 0.377);
 }
 
 .titulo-tarjeta{
@@ -207,6 +210,91 @@ grid-column: 1/3;
   padding:8px;
 }
 
+
+
+/*De aca a abajo es tienda , hay que agregarlo a sass*/
+/* Estilos para la barra de filtro */
+        .barra-filtro {
+            background-color: #f0f0f0;
+            color: black;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+ 
+/* Estilos para los selectores y botones de filtro tienda */
+        select, input, button {
+            padding: 10px;
+            border-radius: 7px;
+            margin: 5px;
+            background-color: rgba(194, 194, 194, 0.24);
+            border: 1px solid rgba(177, 174, 174, 0.466);
+        }
+
+.contenedor-tienda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 50px; 
+  
+}
+
+.tienda-item {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 6px 6px rgba(56, 55, 56, 0.418);
+  border-radius: 10px;
+  
+}
+.img-tienda{
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+}
+.titulo-producto{
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 3px;
+}
+
+.description-producto{
+font-size: 15px;
+padding-bottom: 4px;
+}
+
+.talles-producto{
+
+font-size:13px ;
+padding-bottom:10px;
+
+}
+
+.precio-producto{
+font-size: 20px;
+margin-bottom: 50px;
+}
+
+
+.boton-producto{
+font-size: 20px;
+padding: 40px;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+text-decoration: none;
+color: black;
+border: 2px solid rgba(0, 255, 255, 0.507);
+}
+.boton-producto:hover {
+  background-color: rgba(42, 180, 134, 0.555);
+}
+
+
+
   /*De aca para abajo tiene sass*/
 
 .formulario{
@@ -218,160 +306,7 @@ grid-column: 1/3;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.contenedor_catalogo {
-  width: 100%;
-  height: 500px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "box1 box2 box3 box4 box5" "box6 box7 box8 box9 box10";
-}
-.contenedor_catalogo .box1 {
-  grid-area: box1;
-  padding-bottom: 30px;
-}
-.contenedor_catalogo .box1 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box1 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box2 {
-  grid-area: box2;
-  padding-bottom: 30px;
-}
-.contenedor_catalogo .box2 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box2 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box3 {
-  grid-area: box3;
-  padding-bottom: 30px;
-}
-.contenedor_catalogo .box3 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box3 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box4 {
-  grid-area: box4;
-  padding-bottom: 30px;
-}
-.contenedor_catalogo .box4 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box4 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box5 {
-  grid-area: box5;
-  padding-bottom: 30px;
-}
-.contenedor_catalogo .box5 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box5 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box6 {
-  grid-area: box6;
-}
-.contenedor_catalogo .box6 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box6 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box7 {
-  grid-area: box7;
-}
-.contenedor_catalogo .box7 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box7 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box8 {
-  grid-area: box8;
-}
-.contenedor_catalogo .box8 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box8 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box9 {
-  grid-area: box9;
-}
-.contenedor_catalogo .box9 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box9 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
-.contenedor_catalogo .box10 {
-  grid-area: box10;
-}
-.contenedor_catalogo .box10 .img_card {
-  width: 170px;
-  height: 230px;
-  border-radius: 10%;
-}
-.contenedor_catalogo .box10 .boton_agregar {
-  background-color: #DFD4C8;
-  border-radius: 15%;
-  padding: 3px;
-  color: black;
-}
+
 /*Agregar a sass*/
 .gmail{
   text-decoration: none;
@@ -475,6 +410,8 @@ grid-column: 1/3;
 
 
 
+
+
 @media screen and (max-width: 900px) {
 
   /*Body*/
@@ -517,7 +454,7 @@ grid-column: 1/3;
             }
 
             .titulo-tarjeta{
-              font-size:10px;
+              font-size:15px;
               padding-bottom: 4px;
             }
 
@@ -530,4 +467,13 @@ grid-column: 1/3;
               height: 35%;
               padding:3px;
             }
+/*# nuevo sin sass de tiendas  */
+ /* barra de filtro de tienda  */
+ .barra-filtro {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tienda-item {
+  grid-column: span 2; /* Dos columnas en pantallas muy pequeñas */
+}
 }/*# sourceMappingURL=style.css.map */
