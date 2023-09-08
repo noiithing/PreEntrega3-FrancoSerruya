@@ -1,0 +1,76 @@
+/*De aca a abajo es como comprar , hay que agregarlo a sass*/
+.como-comprar {
+
+    .encabezado-como-comprar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .titulo-como-comprar {
+            padding-top: 20px;
+            font-size: 30px;
+            font-weight: 800;
+
+        }
+
+        .subtitulo-como-comprar {
+            font-size: 15px;
+            padding-bottom: 30px;
+            font-weight: 300;
+        }
+    }
+
+    .contenedor-como-comprar {
+        background-color: #f0f0f0;
+        ;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-around;
+        row-gap: 30rem;
+
+        .box1-como-comprar,
+        .box2-como-comprar,
+        .box3-como-comprar {
+
+            text-align: center;
+            height: 250px;
+            width: 350px;
+            padding: 15px;
+
+            .h2-como-comprar {
+                padding-top: 20px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .h3-como-comprar {
+                padding-top: 10px;
+                font-size: 15px;
+                font-weight: 300;
+
+
+            }
+
+
+        }
+
+    }
+
+}
+
+/*acordeon*/
+.contenedor-acordeon {
+    text-align: center;
+
+    .titulo-acordeon {
+        padding-top: 20px;
+        font-weight: 700;
+        font-size: medium;
+    }
+
+    .accordion {
+        padding: 100px;
+        padding-top: 20px;
+    }
+}

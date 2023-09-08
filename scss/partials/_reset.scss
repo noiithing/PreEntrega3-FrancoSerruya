@@ -1,8 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: 0;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     list-style: none;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
 }

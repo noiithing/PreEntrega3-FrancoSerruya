@@ -1,0 +1,83 @@
+/* Estilos para la barra de filtro */
+.barra-filtro {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    select,
+    input,
+    button {
+        padding: 10px;
+        border-radius: 7px;
+        margin: 5px;
+        background-color: rgba(194, 194, 194, 0.24);
+        border: 1px solid rgba(177, 174, 174, 0.466);
+    }
+}
+
+
+.contenedor-tienda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+
+
+    .tienda-item {
+        background-color: #ffffff;
+        padding: 30px;
+        margin: 30px;
+        text-align: center;
+        box-shadow: 2px 2px 6px 6px rgba(56, 55, 56, 0.418);
+        border-radius: 10px;
+
+        .img-tienda {
+            width: 70%;
+            height: 50%;
+            border-radius: 20px;
+        }
+
+        .titulo-producto {
+            font-size: 20px;
+            padding-top: 15px;
+            padding-bottom: 3px;
+        }
+
+        .description-producto {
+            font-size: 15px;
+            padding-bottom: 4px;
+        }
+
+        .talles-producto {
+
+            font-size: 13px;
+            padding-bottom: 10px;
+
+        }
+
+        .precio-producto {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        .boton-producto {
+            font-size: 20px;
+            padding: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            border: 2px solid rgba(0, 255, 255, 0.507);
+
+            &:hover {
+                background-color: rgba(42, 180, 134, 0.555);
+            }
+        }
+    }
+
+}

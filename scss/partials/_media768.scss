@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .grid-accesos-inicio {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-como-comprar-index {
+        flex-flow: column wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+
+}

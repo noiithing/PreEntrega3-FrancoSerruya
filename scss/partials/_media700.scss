@@ -1,0 +1,40 @@
+@media (min-width: 700px) {
+
+    .contactanos {
+
+        .titulo-contacto {
+            margin-bottom: 50px;
+            }
+            .contenedor-formulario {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                
+                >* {
+                    padding: 2em;
+                }
+            }
+
+            
+        
+            .contacto-info {
+
+                ul,
+                p {
+                    padding: 1rem;
+                }
+        
+                h4,
+                ul,
+                ul li,
+                p {
+                    text-align: left;
+                }
+            }
+    
+        }
+
+
+
+   
+
+}

@@ -1,0 +1,60 @@
+/*divisor del index*/
+
+.contenedor-como-comprar-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+    align-items: center;
+    flex-grow: wrap;
+    gap: 150px;
+    padding-top: 50px;
+
+    .box-divisor-index {
+        height: 150px;
+        width: 200px;
+        text-align: center;
+        align-items: center;
+
+
+        .h2-divisor-index {
+            margin-top: 5px;
+            font-size: 15px;
+            color: gray;
+        }
+
+        .h3-divisor-index {
+            margin-top: 5px;
+            font-size: 10px;
+            color: gray;
+        }
+
+    }
+}
+
+
+.grid-accesos-inicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas de igual ancho */
+    grid-gap: 20px;
+    /* Espacio entre las celdas */
+
+    .grid-item-accesos {
+        padding: 20px;
+        text-align: center;
+
+
+        .imagen-accesos {
+            width: 50%;
+            height: 80%;
+            box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.418);
+            border-radius: 5px;
+        }
+
+    }
+
+
+}
+
+/*tarjetas de index sin sass*/

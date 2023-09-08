@@ -6,225 +6,16 @@
   font-family: "Poppins", sans-serif;
   list-style: none;
 }
-/*De aca a abajo es contactanos , hay que agregarlo a sass*/
-body{
-  display:grid;
+
+body {
+  display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  margin:0;
-}
-.titulo-contacto{
-  margin-bottom: 30px;
-}
-.contactanos, .contacto-info{
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
-  background-color 
-}
-
-.titulo-contacto{
-  text-align: center;
-  font-size: 3em;
-}
-
-.contacto-form form p{
   margin: 0;
-  padding: 1em;
-  }
-
-.contacto-form form{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
-.contacto-form form .block{
-grid-column: 1/3;
-}
-
-.contacto-form form button , .contacto-form form input , .contacto-form form textarea{
-  width: 100%;
-  padding: .7em;
-  border:none;
-  background: none;
-  outline: 0;
-  border-bottom:1px solid rgba(10, 134, 134, 0.726);
-}
-
-.contenedor-formulario{
-  box-shadow: 0 0 20px 0 rgba(2, 29, 24, 0.719);
-  padding: 1em;
-}
-.contacto-form form button{
-
-  background: rgba(0, 255, 255, 0.377);
-  border: 0;
-  text-transform: uppercase;
-  
-}
-.contacto-form form button:hover ,.contacto-form form button:focus{
-  background:rgb(3, 133, 133) ;
-  color: black;
-  transition: background-color is ease-out;
-  outline: 0;
-}
-
-.contacto-info{
-  background:rgba(29, 27, 27, 0.562);
-  color: aliceblue;
-  }
-
-  .contacto-info h4 , .contacto-info  ul , .contacto-info p{
-    text-align: center;
-    margin: 0 0 1rem 0;
-  }
-    
-  .contacto-info a{
-    text-decoration: none;
-    color: white;
-  }
-  .contacto-info a:hover{
-    color: rgba(12, 196, 196, 0.274);
-  }
-  
-  .contacto-info ul li{
-    padding: .3em;
-  }
-  /*De aca a abajo es como comprar , hay que agregarlo a sass*/
-  .encabezado-como-comprar{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .titulo-como-comprar{
-    padding-top: 20px ;
-    font-size: 30px ;
-    font-weight: 800;
-    
-  }
-  .subtitulo-como-comprar{
-    font-size: 15px;
-    padding-bottom: 30px;
-    font-weight: 300;
-  }
-  .contenedor-como-comprar{
-  background-color: #f0f0f0;;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  display: flex;
-}
-
-.contenedor-como-comprar{
-
-  justify-content:space-around;
-  row-gap: 30rem;
-}
-.box1-como-comprar, .box2-como-comprar , .box3-como-comprar{
-
-  text-align: center;
-  
-  height: 250px;
-  width: 350px;
-  padding: 15px;
-  
-}
-.h2-como-comprar{
-  padding-top: 20px;
-  font-size: 20px;
-  font-weight: 500;
-}
-.h3-como-comprar{
-  padding-top: 10px;
-  font-size: 15px;
-  font-weight: 300;
-  
-
-}
-.iconos-como-compar{
-  padding-top: 10px;
-  width: 100px
-}
-
-/*acordeon*/
-.contenedor-acordeon{
-  text-align: center;
-}
-.titulo-acordeon{
-  padding-top: 20px;
-  font-weight: 700;
-  font-size: medium;
-}
-.accordion{
-  padding: 100px;
-  padding-top: 20px;
-}
-
-
-/*De aca a abajo es talles , hay que agregarlo a sass*/
-.contenedor-talles {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-gap: 30px;
-        padding: 20px;
-        padding-bottom: 50px;
-        }
-
-      
-.talles-card {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
-        box-shadow: 2px 2px 6px 6px rgba(9, 22, 199, 0.185);
-        font-size: 15px;
-        border-radius: 3%;
-        background-color: rgba(238, 233, 233, 0.377);
-        
-        }
-.talles-card-mujer{
-  border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
-        box-shadow: 2px 2px 6px 6px rgba(182, 22, 147, 0.418);
-        font-size: 15px;
-        border-radius: 3%;
-        background-color: rgba(238, 233, 233, 0.377);
-}
-
-.titulo-tarjeta{
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-.titulo-talles{
-  text-align: center;
-  padding-top: 30px;
-  font-size: 30px;
-}
-.imagen-talles {
-  width: 70%;
-  height: 60%;
-}
-.imagen-tabla-talles{
-  width: 50%;
-  height: 30%;
-  padding:8px;
-}
-
-/*tarjetas de index sin sass*/
-.imagen-accesos{
-  width: 50%;
-  height: 80%;
-  box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.418);
-  border-radius: 5px;
-}
-
-.grid-accesos-inicio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
-  grid-gap: 20px; /* Espacio entre las celdas */
-}
 /*divisor del index*/
-.contenedor-como-comprar-index{
+.contenedor-como-comprar-index {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -234,135 +25,204 @@ grid-column: 1/3;
   gap: 150px;
   padding-top: 50px;
 }
-
-.h2-divisor-index{
+.contenedor-como-comprar-index .box-divisor-index {
+  height: 150px;
+  width: 200px;
+  text-align: center;
+  align-items: center;
+}
+.contenedor-como-comprar-index .box-divisor-index .h2-divisor-index {
   margin-top: 5px;
   font-size: 15px;
   color: gray;
 }
-.h3-divisor-index{
+.contenedor-como-comprar-index .box-divisor-index .h3-divisor-index {
   margin-top: 5px;
   font-size: 10px;
   color: gray;
 }
-.box-divisor-index{
-  height:150px;
-  width: 200px;
-  text-align: center;
-  align-items: center;
-  
+
+.grid-accesos-inicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas de igual ancho */
+  grid-gap: 20px;
+  /* Espacio entre las celdas */
 }
-
-
-/* Estilos para los elementos del grid */
-.grid-item-accesos {
+.grid-accesos-inicio .grid-item-accesos {
   padding: 20px;
   text-align: center;
-  
-
+}
+.grid-accesos-inicio .grid-item-accesos .imagen-accesos {
+  width: 50%;
+  height: 80%;
+  box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.418);
+  border-radius: 5px;
 }
 
-/*De aca a abajo es tienda , hay que agregarlo a sass*/
+/*tarjetas de index sin sass*/
 /* Estilos para la barra de filtro */
-        .barra-filtro {
-            background-color: #f0f0f0;
-            color: black;
-            padding: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
- 
-/* Estilos para los selectores y botones de filtro tienda */
-        select, input, button {
-            padding: 10px;
-            border-radius: 7px;
-            margin: 5px;
-            background-color: rgba(194, 194, 194, 0.24);
-            border: 1px solid rgba(177, 174, 174, 0.466);
-        }
+.barra-filtro {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.barra-filtro select,
+.barra-filtro input,
+.barra-filtro button {
+  padding: 10px;
+  border-radius: 7px;
+  margin: 5px;
+  background-color: rgba(194, 194, 194, 0.24);
+  border: 1px solid rgba(177, 174, 174, 0.466);
+}
 
 .contenedor-tienda {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); 
-  grid-template-rows: repeat(2, 1fr); 
-  gap: 50px; 
-  
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
 }
-
-.tienda-item {
+.contenedor-tienda .tienda-item {
   background-color: #ffffff;
   padding: 30px;
   margin: 30px;
   text-align: center;
   box-shadow: 2px 2px 6px 6px rgba(56, 55, 56, 0.418);
   border-radius: 10px;
-  
 }
-.img-tienda{
+.contenedor-tienda .tienda-item .img-tienda {
   width: 70%;
   height: 50%;
   border-radius: 20px;
 }
-.titulo-producto{
+.contenedor-tienda .tienda-item .titulo-producto {
   font-size: 20px;
   padding-top: 15px;
   padding-bottom: 3px;
 }
-
-.description-producto{
-font-size: 15px;
-padding-bottom: 4px;
+.contenedor-tienda .tienda-item .description-producto {
+  font-size: 15px;
+  padding-bottom: 4px;
 }
-
-.talles-producto{
-
-font-size:13px ;
-padding-bottom:10px;
-
+.contenedor-tienda .tienda-item .talles-producto {
+  font-size: 13px;
+  padding-bottom: 10px;
 }
-
-.precio-producto{
-font-size: 20px;
-margin-bottom: 50px;
+.contenedor-tienda .tienda-item .precio-producto {
+  font-size: 20px;
+  margin-bottom: 50px;
 }
-
-
-.boton-producto{
-font-size: 20px;
-padding: 40px;
-padding-top: 10px;
-padding-bottom: 10px;
-border-radius: 10px;
-text-decoration: none;
-color: black;
-border: 2px solid rgba(0, 255, 255, 0.507);
+.contenedor-tienda .tienda-item .boton-producto {
+  font-size: 20px;
+  padding: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid rgba(0, 255, 255, 0.507);
 }
-.boton-producto:hover {
+.contenedor-tienda .tienda-item .boton-producto:hover {
   background-color: rgba(42, 180, 134, 0.555);
 }
 
-
-
-  /*De aca para abajo tiene sass*/
-
-.formulario{
-  width:800px;
-  
-}
-.destacado {
+/*De aca a abajo es como comprar , hay que agregarlo a sass*/
+.como-comprar .encabezado-como-comprar {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.como-comprar .encabezado-como-comprar .titulo-como-comprar {
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.como-comprar .encabezado-como-comprar .subtitulo-como-comprar {
+  font-size: 15px;
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+.como-comprar .contenedor-como-comprar {
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  row-gap: 30rem;
+}
+.como-comprar .contenedor-como-comprar .box1-como-comprar,
+.como-comprar .contenedor-como-comprar .box2-como-comprar,
+.como-comprar .contenedor-como-comprar .box3-como-comprar {
+  text-align: center;
+  height: 250px;
+  width: 350px;
+  padding: 15px;
+}
+.como-comprar .contenedor-como-comprar .box1-como-comprar .h2-como-comprar,
+.como-comprar .contenedor-como-comprar .box2-como-comprar .h2-como-comprar,
+.como-comprar .contenedor-como-comprar .box3-como-comprar .h2-como-comprar {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.como-comprar .contenedor-como-comprar .box1-como-comprar .h3-como-comprar,
+.como-comprar .contenedor-como-comprar .box2-como-comprar .h3-como-comprar,
+.como-comprar .contenedor-como-comprar .box3-como-comprar .h3-como-comprar {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
-/*Agregar a sass*/
-.gmail{
-  text-decoration: none;
+/*acordeon*/
+.contenedor-acordeon {
+  text-align: center;
 }
-.gmail:hover{
-  color: rgba(18, 114, 114, 0.747);
+.contenedor-acordeon .titulo-acordeon {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: medium;
 }
+.contenedor-acordeon .accordion {
+  padding: 100px;
+  padding-top: 20px;
+}
+
+/*De aca a abajo es talles , hay que agregarlo a sass*/
+.contenedor-talles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.contenedor-talles .talles-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 6px 6px rgba(9, 22, 199, 0.185);
+  font-size: 15px;
+  border-radius: 3%;
+  background-color: rgba(238, 233, 233, 0.377);
+}
+.contenedor-talles .talles-card .titulo-tarjeta {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.contenedor-talles .talles-card .imagen-talles {
+  width: 70%;
+  height: 60%;
+}
+.contenedor-talles .talles-card .imagen-tabla-talles {
+  width: 50%;
+  height: 30%;
+  padding: 8px;
+}
+
 .contenedor_footer {
   width: 100%;
   color: black;
@@ -373,24 +233,34 @@ border: 2px solid rgba(0, 255, 255, 0.507);
   text-align: center;
   background-color: #f0f0f0;
 }
+
 .contenedor_footer a {
   color: black;
 }
+
 .contenedor_footer div {
   display: flex;
   align-items: center;
-  
 }
-.contenedor_footer .caja1, .contenedor_footer .caja2, .contenedor_footer .caja3, .contenedor_footer .caja4 {
+
+.contenedor_footer .caja1,
+.contenedor_footer .caja2,
+.contenedor_footer .caja3,
+.contenedor_footer .caja4 {
   background-color: #f0f0f0;
   text-align: center;
   justify-content: center;
 }
-.contenedor_footer .caja1 .img_footer, .contenedor_footer .caja2 .img_footer, .contenedor_footer .caja3 .img_footer, .contenedor_footer .caja4 .img_footer {
+
+.contenedor_footer .caja1 .img_footer,
+.contenedor_footer .caja2 .img_footer,
+.contenedor_footer .caja3 .img_footer,
+.contenedor_footer .caja4 .img_footer {
   width: 50%;
   height: 50%;
   font-size: small;
 }
+
 .contenedor_footer .caja1 {
   padding-top: 1rem;
   width: 150px;
@@ -399,26 +269,60 @@ border: 2px solid rgba(0, 255, 255, 0.507);
   text-align: center;
   font-size: 10px;
 }
+
 .contenedor_footer .caja2 {
   width: 150px;
   height: 80px;
   align-content: center;
   font-size: 10px;
 }
+
 .contenedor_footer .caja3 {
   width: 150px;
   height: 80px;
   align-content: center;
   font-size: 10px;
 }
+
 .contenedor_footer .caja4 {
   width: 150px;
   height: 80px;
   align-content: center;
   font-size: 10px;
 }
-/*Agregar a sass*/
 
+@media (max-width: 768px) {
+  .grid-accesos-inicio {
+    grid-template-columns: 1fr;
+  }
+  .contenedor-como-comprar-index {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+@media (min-width: 700px) {
+  .contactanos .titulo-contacto {
+    margin-bottom: 50px;
+  }
+  .contactanos .contenedor-formulario {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contactanos .contenedor-formulario > * {
+    padding: 2em;
+  }
+  .contactanos .contacto-info ul,
+  .contactanos .contacto-info p {
+    padding: 1rem;
+  }
+  .contactanos .contacto-info h4,
+  .contactanos .contacto-info ul,
+  .contactanos .contacto-info ul li,
+  .contactanos .contacto-info p {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1024px) {
   .menu_item.active {
     background-color: #DFD4C8;
@@ -427,117 +331,76 @@ border: 2px solid rgba(0, 255, 255, 0.507);
     padding: 5px;
     margin: 5px;
   }
-/* talles Agregar a sass*/
   .contenedor-talles {
-                grid-template-columns: repeat(4, 1fr);
-              }  
-}
-
-/*Nuevo sin SASS*/
-@media (min-width: 700px) {  
-
-  .titulo-contacto{
-    margin-bottom: 50px;
+    grid-template-columns: repeat(4, 1fr);
   }
-.contenedor-formulario{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
 }
-.contenedor-formulario > * {
-  padding: 2em;
-}
-.contacto-info ul , .contacto-info p{
-  padding :1rem;
-}
-    .contacto-info h4,
-    .contacto-info ul,
-    .contacto-inf ul li,
-    .contacto-info p {
-      text-align: left;
-    }
-}
-
-
-
-
-
 @media screen and (max-width: 900px) {
-
-  /*Body*/
-  .contenedor_catalogo {
-    width: 100%;
-    height: 200px;
-    text-align: center;
+  /*nuevo  - como comprar  */
+  .contenedor-como-comprar {
+    background-color: #f0f0f0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "box1 box2 box3" "box4 box5 box6 box7 box8 box 9 box10";
-  }
-
-
-/*nuevo sin css - como comprar  */
-  .contenedor-como-comprar{
-    background-color: #f0f0f0;;
-    display:grid;
     grid-template-rows: 1fr;
     display: flex;
     flex-direction: column;
-  
-  }
-  .box1-como-comprar, .box2-como-comprar , .box3-como-comprar{
-    height:300px;
-    width: 200px;
-    text-align: center;
-    align-items: center;
-    
-  }
-  .contenedor-como-comprar{
-
     flex-flow: row wrap;
     row-gap: 5rem;
   }
-
-/*# media queris talles , sin sass*/
-  .contenedor-talles {
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-
-            .titulo-tarjeta{
-              font-size:15px;
-              padding-bottom: 4px;
-            }
-
-            .imagen-talles {
-              width: 70%;
-              height: 50%;
-            }
-            .imagen-tabla-talles{
-              width: 75%;
-              height: 35%;
-              padding:3px;
-            }
-/*# nuevo sin sass de tiendas  */
- /* barra de filtro de tienda  */
- .barra-filtro {
-  flex-direction: column;
-  align-items: flex-start;
-}
-.tienda-item {
-  grid-column: span 2; /* Dos columnas en pantallas muy pequeñas */
-}
-
- /* tarjetas inicio */
- @media (max-width: 768px) {
-  .grid-accesos-inicio {
-      grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+  .contenedor-como-comprar .box1-como-comprar,
+  .contenedor-como-comprar .box2-como-comprar,
+  .contenedor-como-comprar .box3-como-comprar {
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
   }
-
-
-  .contenedor-como-comprar-index{
-  flex-flow: column wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-
+  /*# media queris talles , */
+  .contenedor-talles {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .contenedor-talles .titulo-tarjeta {
+    font-size: 15px;
+    padding-bottom: 4px;
+  }
+  .contenedor-talles .imagen-talles {
+    width: 70%;
+    height: 50%;
+  }
+  .contenedor-talles .imagen-tabla-talles {
+    width: 75%;
+    height: 35%;
+    padding: 3px;
+  }
+  /* barra de filtro de tienda  */
+  .barra-filtro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contenedor-tienda .tienda-item {
+    grid-column: span 2;
+  }
+  /*Footer*/
+  .footer {
+    font-size: small;
+    position: absolute;
+    bottom: 0px;
+  }
+  .footer .contenedor_footer {
+    display: grid;
+    position: absolute;
+    bottom: 0px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "caja1 caja2 caja4" "caja1 caja3 caja4";
+  }
+  .footer .contenedor_footer .img_footer {
+    width: 60%;
+    height: 60%;
+  }
+  .footer .caja1 ul li,
+  .footer .caja2 ul li,
+  .footer .caja3 ul li,
+  .footer .caja4 ul li {
+    font-size: x-small;
+  }
 }/*# sourceMappingURL=style.css.map */

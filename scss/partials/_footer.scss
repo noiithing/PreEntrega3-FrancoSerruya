@@ -1,49 +1,68 @@
-.contenedor_footer{
-    display: grid;
+.contenedor_footer {
     width: 100%;
-    height: 150px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "caja1 caja2 caja3 caja4";
     color: black;
-    position: absolute;
-    bottom:0px;
-    padding-top: 100px;
-        a{
-        color: black;
-    
-        }
-    
-        div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+}
 
-    .caja1 ,.caja2 ,.caja3 ,.caja4{
+.contenedor_footer a {
+    color: black;
+}
 
-        background-color: #DFD4C8;
-        text-align: center;
-        justify-content:center;
-        
+.contenedor_footer div {
+    display: flex;
+    align-items: center;
 
-        .img_footer{
-            width: 15%;
-            height:15%;
-        }
+}
 
-        }
+.contenedor_footer .caja1,
+.contenedor_footer .caja2,
+.contenedor_footer .caja3,
+.contenedor_footer .caja4 {
+    background-color: #f0f0f0;
+    text-align: center;
+    justify-content: center;
+}
 
-        .caja1{
-            grid-area: caja1;
-        }
-        .caja2{
-            grid-area:caja2;
-        }
-        .caja3{
-            grid-area:caja3;
-        }
-        .caja4{
-            grid-area:caja4;
-        }
+.contenedor_footer .caja1 .img_footer,
+.contenedor_footer .caja2 .img_footer,
+.contenedor_footer .caja3 .img_footer,
+.contenedor_footer .caja4 .img_footer {
+    width: 50%;
+    height: 50%;
+    font-size: small;
+}
+
+.contenedor_footer .caja1 {
+    padding-top: 1rem;
+    width: 150px;
+    height: 80px;
+    align-content: center;
+    text-align: center;
+    font-size: 10px;
+}
+
+.contenedor_footer .caja2 {
+    width: 150px;
+    height: 80px;
+    align-content: center;
+    font-size: 10px;
+}
+
+.contenedor_footer .caja3 {
+    width: 150px;
+    height: 80px;
+    align-content: center;
+    font-size: 10px;
+}
+
+.contenedor_footer .caja4 {
+    width: 150px;
+    height: 80px;
+    align-content: center;
+    font-size: 10px;
 }
